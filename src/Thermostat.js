@@ -1,3 +1,4 @@
+'use strict';
 function Thermostat() {
   this.currentTemperature = 20;
   this.minimumTemperature = 10;
@@ -31,4 +32,14 @@ Thermostat.prototype.togglePowerSavingMode = function() {
 Thermostat.prototype.reset = function() {
   this.currentTemperature = 20;
   return this.currentTemperature;
+};
+
+Thermostat.prototype.currentEnergyUsage = function() {
+  if (this.currentTemperature < 18) {
+    return "low"
+  } else if (this.currentTemperature < 25) {
+    return "medium"
+  } else {
+    return "high"
+  }
 };

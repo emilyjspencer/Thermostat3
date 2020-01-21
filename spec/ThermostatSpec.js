@@ -1,5 +1,7 @@
+'use strict';
+
 describe('Thermostat', function() {
-  var temperature;
+  var thermostat;
 
   beforeEach(function() {
     thermostat = new Thermostat();
@@ -41,5 +43,18 @@ describe('Thermostat', function() {
     expect(thermostat.reset()).toEqual(20)
   });
 
+  it('checks whether the usage is low when current temperature is less than 18', function() {
+    thermostat.currentTemperature = 12;
+    expect(thermostat.currentEnergyUsage()).toEqual("low")
+  });
 
+  it('checks whether the usage is low when current temperature is less than 18', function() {
+    thermostat.currentTemperature = 20;
+    expect(thermostat.currentEnergyUsage()).toEqual("medium")
+  });
+
+  it('checks whether the usage is low when current temperature is less than 18', function() {
+    thermostat.currentTemperature = 30;
+    expect(thermostat.currentEnergyUsage()).toEqual("high")
+  });
 });
