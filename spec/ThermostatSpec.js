@@ -12,4 +12,13 @@ describe('Thermostat', function() {
   it('can increase the temperature with an UP function', function() {
     expect(thermostat.increase()).toEqual(21)
   });
+
+  it('can decrease the temperature with a DOWN function', function() {
+    expect(thermostat.decrease()).toEqual(19)
+  });
+
+  it('cannot reduce the temperature below the minimum(10)', function() {
+    for(let step = 0; step < 10; step++) {thermostat.decrease();}
+    expect(thermostat.decrease()).toEqual(10)
+  });
 });
