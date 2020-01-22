@@ -321,3 +321,203 @@ body {
     margin: auto;
     color: white;
 }
+
+#plus {
+    background-color: #ff66cc;
+    display: inline-block;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#plus span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#plus span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#plus span {
+    padding-right: 25px;
+}
+
+#plus:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#minus {
+    background-color: #ff66cc;
+    display: inline-block;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#minus span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#minus span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#minus span {
+    padding-right: 25px;
+}
+
+#minus:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#reset {
+    background-color: #ff66cc;
+    display: inline-block;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#reset span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#reset span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#reset span {
+    padding-right: 25px;
+}
+
+#reset:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#powersaving-on {
+    background-color: #ff66cc;
+    display: inline-block;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#powersaving-on span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#minpowersaving-on span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#powersaving-on span {
+    padding-right: 25px;
+}
+
+#powersaving-on:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#powersaving-off {
+    background-color: #ff66cc;
+    display: inline-block;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#powersaving-off span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#powersaving-off span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#powersaving-off span {
+    padding-right: 25px;
+}
+
+#powersaving-off:hover span:after {
+    opacity: 1;
+    right: 0;
+}
