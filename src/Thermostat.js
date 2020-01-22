@@ -30,6 +30,24 @@ Thermostat.prototype.togglePowerSavingMode = function() {
   } 
 };
 
+Thermostat.prototype.isPowerSavingModeOn = function() {
+  return this.powerSavingMode === true;
+};
+
+Thermostat.prototype.isPowerSavingModeOff = function() {
+  return this.powerSavingMode === false;
+};
+
+
+Thermostat.prototype.switchPowerSavingModeOff = function() {
+  this.powerSavingMode === false;
+};
+
+Thermostat.prototype.switchPowerSavingModeOn = function() {
+  this.powerSavingMode === true;
+
+};
+
 Thermostat.prototype.reset = function() {
   this.currentTemperature = this.defaultTemperature;
   return this.currentTemperature;
