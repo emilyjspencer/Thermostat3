@@ -521,3 +521,15 @@ body {
     opacity: 1;
     right: 0;
 }
+
+.low {
+    color: green;
+}
+
+.medium {
+    color: black;
+}
+
+.high {
+    color: red;
+}
