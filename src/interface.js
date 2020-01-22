@@ -19,8 +19,16 @@ $(document).ready(function() {
   });
 
   $('#current-temp-display').text(thermostat.currentTemperature);
-  $('#powersave').on('click', function() {
-    thermostat.togglePowerSavingMode();
+  $('#powersaving-on').on('click', function() {
+    thermostat.switchPowerSavingModeOn();
+    $('#power-saving-status').text('on')
+  $('#current-temp-display').text(thermostat.currentTemperature);
+  });
+
+  $('#current-temp-display').text(thermostat.currentTemperature);
+  $('#powersaving-off').on('click', function() {
+    thermostat.switchPowerSavingModeOff();
+    $('#power-saving-status').text('off')
   $('#current-temp-display').text(thermostat.currentTemperature);
   });
 });
